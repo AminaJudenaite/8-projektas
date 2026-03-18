@@ -2,32 +2,123 @@
 <html lang="lt">
 
 <head>
- <meta charset="utf-8">
- <title>Stilizacijos karkaso naudojimas</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel=
-"stylesheet" integrity="sha384-
-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin=
-"anonymous">
+    <meta charset="utf-8">
+    <title>Stilizacijos karkaso naudojimas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
 
-//*pasiziuret dar sita vieta
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
-    <div class="container-fluid">
-        <span class="navbar-brand">Mano Puslapis</span>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+        <div class="container-fluid text-white">
+            <h4>Puslapio navigacija</h4>
+        </div>
+    </nav>
+
+    <div class="container pt-5 text-center">
+        <h1 class="text-center">Mano Bootstrap Puslapis</h1>
+
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Pirmas</button>
+            <button type="button" class="btn btn-primary">Antras</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Trečias</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Trečias1</a>
+                    <a class="dropdown-item" href="#">Trečias2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive pt-5">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Vardas</th>
+                        <th>Pavardė</th>
+                        <th>E-paštas</th>
+                    </tr>
+                </thead>
+                <tbody class="table-dark">
+                    <tr>
+                        <td>Jonas</td>
+                        <td>Trečiokas</td>
+                        <td>jon@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Marija</td>
+                        <td>Studentė</td>
+                        <td>marija@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Julius</td>
+                        <td>Juliokas</td>
+                        <td>julius@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-32 col-md-16 col-lg-8 bg-info p-3 border">.col-8</div>
+                <div class="col-16 col-md-8 col-lg-4 bg-info p-3 border">.col-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 bg-info p-3 border">.col-3</div>
+                <div class="col-28 col-md-14 col-lg-7 bg-info p-3 border">.col-7</div>
+                <div class="col-8 col-md-4 col-lg-2 bg-info p-3 border">.col-2</div>
+            </div>
+
+            <div class="row">
+                <div class="col-16 col-md-8 col-lg-4 bg-info p-3 border">.col-4</div>
+                <div class="col-12 col-md-6 col-lg-3 bg-info p-3 border">.col-3</div>
+                <div class="col-20 col-md-10 col-lg-5 bg-info p-3 border">.col-5</div>
+            </div>
+        </div>
+
+<div id="karusele" class="carousel pt-5">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="nuotraukos/nature1.jpg" class="d-block w-100">
     </div>
-</nav>
+    <div class="carousel-item">
+      <img src="nuotraukos/nature2.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="nuotraukos/nature3.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="nuotraukos/nature4.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="nuotraukos/nature5.jpg" class="d-block w-100">
+    </div>
+  </div>
 
-<div class="container mt-5">
-    <h1 class="text-center">Mano Bootstrap Puslapis</h1>
+  <button class="carousel-control-prev" type="button" data-bs-target="#karusele" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#karusele" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
-//*
 
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-
-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin=
-"anonymous"></script>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
